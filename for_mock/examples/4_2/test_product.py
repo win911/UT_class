@@ -10,7 +10,6 @@ from factory import Product, BadProductQualityError
 
 @patch("factory.ProductQualityChecker")
 def test_bed_product_quality_because_of_shape(mock_quality_checker):
-    mock_quality_checker.side_effect = MagicMock()
     mock_quality_checker.checkpoint_1.return_value = 94
 
     p = Product()
@@ -22,7 +21,6 @@ def test_bed_product_quality_because_of_shape(mock_quality_checker):
 
 @patch("factory.ProductQualityChecker")
 def test_bed_product_quality_because_of_color(mock_quality_checker):
-    mock_quality_checker.side_effect = MagicMock()
     mock_quality_checker.checkpoint_1.return_value = 95
     mock_quality_checker.checkpoint_2.return_value = 89
 
@@ -35,7 +33,6 @@ def test_bed_product_quality_because_of_color(mock_quality_checker):
 
 @patch("factory.ProductQualityChecker")
 def test_bed_product_quality_because_of_smell(mock_quality_checker):
-    mock_quality_checker.side_effect = MagicMock()
     mock_quality_checker.checkpoint_1.return_value = 95
     mock_quality_checker.checkpoint_2.return_value = 90
     mock_quality_checker.checkpoint_3.return_value = 97
@@ -49,7 +46,6 @@ def test_bed_product_quality_because_of_smell(mock_quality_checker):
 
 @patch("factory.ProductQualityChecker")
 def test_good_product_quality(mock_quality_checker):
-    mock_quality_checker.side_effect = MagicMock()
     mock_quality_checker.checkpoint_1.return_value = 95
     mock_quality_checker.checkpoint_2.return_value = 90
     mock_quality_checker.checkpoint_3.return_value = 98
