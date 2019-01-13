@@ -16,7 +16,6 @@ class Testfibonacci(object):
         def _verify_result(num, cache):
             for i in range(num+1):
                 assert i in cache
-            assert num+1 not in cache
 
         # === Case 1 ===
         cache = {
