@@ -2,6 +2,11 @@
 
 This repository is for the "Unit Test in Python for Beginner" workshop hosted by PyLadies Taiwan.
 
+## Slides
+
+You can also find the slides of our workshop below.
++ Chinese version: [**Unit Test in Python for Beginner**](https://tw.pyladies.com/~maomao/unit_test/Unit_Test_In_Python.slides.html#/)
+
 ## About PyLadies Taiwan
 
 [PyLadies](http://tw.pyladies.com/) is a group of women developers who love the Python programming language.
